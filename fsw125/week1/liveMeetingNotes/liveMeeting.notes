@@ -1,0 +1,51 @@
+Live Meeting Week 1
+
+Class Format
+/Do the weeks work before live class so we have something to review
+// Review last week, current week, preview next week
+and questions will be presented in the week. 
+
+- demo video etc..
+-assignments
+students answer questions 
+
+do interactive practices
+
+
+//Went through week 1 learn it // 
+
+Week 2 is when we will get into more of the APi structure. 
+
+Review what we should know 
+
+What is a console Application? 
+
+(We will be building software)
+
+A console application is a computadora program designed to be used via a text only computer interface, such as a text terminal, 
+the command line interface of some operatiing sustems (unix, Dos, ,etc.) or the text based interface included with most graphical user interface 
+(GUI) operatiing systems, such as windows console in microsoft windows the terminal in mac os and xterms in unix. 
+
+//  My first Computer//
+index.js
+
+const secret = " the secret to life"; 
+
+var http = require('http);
+http.createServer(function (req,res) {
+    console.log("Someone talk to me")
+    res.writeHead(200, {'Content-Type': 'text/plain'});
+    res.write(secret);
+    res.end():
+}).listen(8080)
+
+
+
+
+Postman
+
+we are building a computer program to listen for messages 
+
+we need to use an already build app to send messages 
+
+Add - thunder client (done)

@@ -1,0 +1,3 @@
+Middleware is a great tool to organize your code to work in the request-response cycle. 
+It is basically a function that has access to the req and res objects of your application.
+You can also use app.use(express.json()) to convert your JSON into data useable in javascript. 
