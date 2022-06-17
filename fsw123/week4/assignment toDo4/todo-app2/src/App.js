@@ -1,12 +1,12 @@
-import React, { useState } from "react"
-import ReactDOM from 'react-dom'
-import "./App.css"
-import TodoList from "../components/TodoList"
-import { listoftodos } from '../data/store'
-import TodoForm from "../components/TodoForm";
-function App() {
+import React, { useState } from "react";
+import "./App.css";
+import TodoList from "./components/TodoList"
+import { todoObj } from './data/STORE'
+import TodoForm from "./components/TodoForm";
 
-  const [todoItems, setTodos] = useState(listoftodos) //List of todos come from store.js
+
+function App() {
+  const [todoItems, setTodos] = useState(todoObj) //List of todos come from store.js
 
   const [edit, setEdit] = useState({ //Using state to edit todo
     id: null,

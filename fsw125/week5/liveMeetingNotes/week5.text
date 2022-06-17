@@ -1,0 +1,31 @@
+// Overview
+
+
+// Use a route
+import {BrowserRouter, Routes, Route,Link} from "react-router-dom";
+
+// <BrowerRouter>
+// <header>
+
+// <Link to="/">Home</Link>
+
+(Updated syntax for version 6 of react-router-dom)
+
+import'./app,.css
+
+<routes>
+<Route
+    exact={true}
+    path='/'
+    element={<HomePage/>}
+/>
+
+
+After you click on the home link 
+routed components is used:(home.js)
+
+export default function Home()
+
+return(
+    <h2> My home Page</>
+)

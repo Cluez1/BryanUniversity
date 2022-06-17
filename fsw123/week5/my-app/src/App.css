@@ -1,0 +1,76 @@
+*{
+  margin: 0
+}
+
+
+
+.mainContainer{
+  align-items: center;
+  background: #536976; 
+  background: -webkit-linear-gradient(to bottom, #292E49, #536976); 
+  background: linear-gradient(to bottom, #292E49, #536976); 
+ 
+}
+/* I should use an icon form font awesome but wanted to play with the api and css alittle. */
+.loader{
+  color: rgb(0, 0, 0);
+  background-size: cover;
+  align-content: center;
+}
+
+
+.gif{
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  display: flex;
+}
+
+img {
+  margin-bottom: 5px;
+  border: 3px solid rgb(53, 49, 0);
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  width:250px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(214, 248, 159);
+  box-shadow: 0 0 40px rgb(196, 196, 61);
+}
+
+img:hover{
+  width: 30%;
+  box-shadow: 0 0 40px rgb(224, 98, 66);
+  border: 3px solid rgb(22, 1, 1);
+}
+/* 
+//Search bar  */
+
+.formContainer{
+  justify-content: center;
+}
+
+/* Button */
+
+button {
+  position: relative;
+  background: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  padding: 1px 3px;
+  transition: 0.5;
+}
+
+button:hover {
+  letter-spacing: 0.25em;
+}
+button::before{
+  content: '';
+  position: relative;
+  inset: 2px;
+  background: rgb(238, 211, 211);
+}
