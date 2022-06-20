@@ -1,0 +1,24 @@
+Routes and Effects
+
+Exporting Routes 
+
+export default function Home() {
+    return (
+        <h3> My home Page</h3> 
+    );
+}
+
+
+Think your app though with pseudocode
+
+collect data
+make a call to the api with your Key and query
+handle the response 
+use data from response: url, title. 
+
+you must look at a raw response to see structure before knowing what data variable you will need. 
+(refering to the Giphy api)
+
+Also showed your Todo Giphy application on how the import { BrowserRouter, Routes, route, link) form react dom works. }
+
+I really like how you set up your navigation links for your Todo project!
