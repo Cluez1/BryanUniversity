@@ -15,10 +15,6 @@ const Giphy = () => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
 
-  //page 1 item 1 - item 25
-  //page 2 item 26 - item 50
-  //page 3 item 51 - item 75
-
   useEffect(() => {
     const fetchData = async () => {
       setIsError(false);
@@ -61,6 +57,7 @@ const Giphy = () => {
   const renderError = () => {
     if (isError) {
       return (
+        //I feel like im close but not quite. 
         <img src="https://media3.giphy.com/media/CoND5j6Bn1QZUgm1xX/giphy.gif?cid=ecf05e47fsoz8kb02my7wkys41vs2l1rwkl4zgife3p1cvnk&rid=giphy.gif&ct=g" />
       );
     };
