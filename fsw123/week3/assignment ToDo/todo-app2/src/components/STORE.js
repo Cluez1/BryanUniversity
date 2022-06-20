@@ -1,5 +1,5 @@
 import {v4 as uuid} from "uuid";
-//I remembered not to import react this time!
+
 export const todoObj = [
     {
         id: uuid(),
@@ -16,3 +16,5 @@ export const todoObj = [
         isCompleted:false
     },
 ];
+
+export default todoObj;

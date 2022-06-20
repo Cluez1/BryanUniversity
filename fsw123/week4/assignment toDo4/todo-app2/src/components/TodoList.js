@@ -1,30 +1,19 @@
-import React, { useState } from 'react'
-import Todo from './Todo'
+import Todo from "./Todo";
 
-
-function TodoList(props) {
-  const [edit, setEdit] = useState(false)
-  const toggleEdit = () => {
-    setEdit(!edit)
-  }
-  console.log('edit mode: ', edit)
-  return (
-  <div>
-  <h1>List of Todos</h1>
-{props.data.map(function (todo) {
-  return (
+function TodoList({todos, completeTodo, deleteTodo, editTodo}){//Prop functions from app.js
+  const listTodos = todos.map((todo) => { //Maps through todos passed from app.js, listoftodos is passed from data and stored in state(todos)
+    return <Todo //Each loop returns a todo with the functions passed into each todo
+             key ={todo.id}
+             todo = {todo}
+             completeTodo ={completeTodo}
+             deleteTodo = {deleteTodo}
+             editTodo = {editTodo}
+             />
+  })
+  return(
     <div>
-    <Todo
-    key={todo.id}
-    todo={todo}
-    completeTodo={props.completeTodo}
-    deleteTodo={props.deleteTodo}
-    />
-    </div>
-  )
-  })}
+      <ul>{listTodos}</ul> 
     </div>
   )
 }
-
-export default TodoList
+export default TodoList;
