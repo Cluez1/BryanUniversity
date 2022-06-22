@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState} from 'react'
 
 function Todo({todo, completeTodo, deleteTodo, editTodo}) {//Prop functions passed from App.js
     let completed = {textDecorationLine: 'none'} //Will be passed as style to each todo
@@ -52,7 +52,7 @@ function Todo({todo, completeTodo, deleteTodo, editTodo}) {//Prop functions pass
           <button disabled onClick={() => toggleEdit()}>Edit</button>
         </div>)
       ) : (
-        <div>  {/*Submit will be disabled if error is true */}
+        <div>//Submit will be disabled if error is true
           <button disabled={error} onClick={() => handleUpdate(todo.id, text)}>Submit</button>//Saves our todo
           <button onClick={() => toggleEdit()}>Close</button>
         </div>

@@ -1,9 +1,10 @@
 import {useState} from 'react'
 
-
 function TodoForm({addTodo}) { //Adding addTodo as prop from App.js
+
   const [error, setError] = useState('');//Will be used to display error
   const [formValue, setFormValue] = useState(''); //Holds the text from our form
+
 
   const handleSubmit = (event) => {
     event.preventDefault(); //Keeps page from refreshing on submit
@@ -22,10 +23,15 @@ function TodoForm({addTodo}) { //Adding addTodo as prop from App.js
    }
 
 
+
   return (
     <div>
+
+
     <form onSubmit = {handleSubmit}> {/* Checks if input is empty, passes value from form into addTodo function */}
+      
       <div>
+        
         <input 
         type="text" 
         value = {formValue}
@@ -33,6 +39,7 @@ function TodoForm({addTodo}) { //Adding addTodo as prop from App.js
         onChange = {handleChange} // This clear the error of screen if there is one
         />
         <button>Add new todo</button>
+
       </div>
       <div>{error}</div>
       </form>    
