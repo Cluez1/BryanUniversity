@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './Todo.css'
 
 function Todo({todo, completeTodo, deleteTodo, editTodo}) {//Prop functions passed from App.js
     let completed = {textDecorationLine: 'none'} //Will be passed as style to each todo
@@ -29,8 +30,9 @@ function Todo({todo, completeTodo, deleteTodo, editTodo}) {//Prop functions pass
   return (
     <div>
         {!edit ? ( //If edit is false we will show the todo
-        <div>
-          <input // Will show a checkbox 
+        <div className='checkbox'>
+          <input
+          className='checkbox' // Will show a checkbox 
             type='checkbox'
             checked={todo.isCompleted} //If the todo is completed the box will automatically be checked
             onChange={() => completeTodo(todo.id)} //Call completeTodo function from app.js, passing in the todo.id
@@ -39,12 +41,12 @@ function Todo({todo, completeTodo, deleteTodo, editTodo}) {//Prop functions pass
         </div>
       ) : ( //If edit is true, show an input text box
         <div>
-          <input type='text' value={text} onChange={handleEdit} /> 
+          <input className='text' type='text' value={text} onChange={handleEdit} /> 
         </div>
       )}
       {!edit ? (!todo.isCompleted ? //If edit is false and todo is not completed, we can edit
         (<div>
-          <button onClick={() => deleteTodo(todo.id)}>Delete</button>
+          <button className='delete' onClick={() => deleteTodo(todo.id)}>Delete</button>
           <button onClick={() => toggleEdit()}>Edit</button>
         </div>) : //Otherwise the edit button is disabled
         (<div>
@@ -53,7 +55,8 @@ function Todo({todo, completeTodo, deleteTodo, editTodo}) {//Prop functions pass
         </div>)
       ) : (
         <div> 
-          <button disabled={error} onClick={() => handleUpdate(todo.id, text)}>Submit</button>//Saves our todo
+          <button disabled={error} onClick={() => handleUpdate(todo.id, text)}>Submit</button>
+          {/* Saves our todo */}
           <button onClick={() => toggleEdit()}>Close</button>
         </div>
       )}

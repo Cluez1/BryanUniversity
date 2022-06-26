@@ -1,0 +1,33 @@
+.checkbox{
+    color: rgb(158, 202, 47);
+    text-shadow:  0 0 40px rgb(65, 27, 100);
+    font-size: 40px;
+    font-weight: 600;
+}
+
+button {
+    position: relative;
+    background: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    padding: 1px 3px;
+    transition: 0.5;
+    background-color: rgb(245, 245, 245);
+    text-shadow: 0 0 40px rgb(161, 53, 10);
+}
+  
+  button:hover {
+    color: blueviolet;
+    background: #444;
+    background-color: rgb(101, 190, 106);
+    text-shadow: 0 0 40px rgb(187, 231, 83);
+}
+  
+  button::before{
+    content: '';
+    position: relative;
+    inset: 2px;
+    background: rgb(238, 211, 211);
+}
