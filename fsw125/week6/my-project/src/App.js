@@ -1,7 +1,7 @@
-import TodoFormHandle from '..AddTodos/components/TodoFormHandle';
+import TodoFormHandle from './components/TodoFormHandle';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Todo from '../components/Todo';
+import Todo from './components/Todo';
 import './App.css';
 
 
