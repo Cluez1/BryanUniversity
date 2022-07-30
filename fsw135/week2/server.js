@@ -23,7 +23,7 @@ mongoose.connect('mongodb://localhost:27017/gamesdb',
 
 //Routes
 
-app.use("/inventory", require("./routes/inventoryRouter"))
+app.use("/games", require("./routes/gameRouter.js"))
 // app.use("/tvshows", require("./routes/tvshowRouter.js"))
 
 //Error handler

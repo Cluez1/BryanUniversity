@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 const Schema = mongoose.Schema
 
-//Game  Schema
+//Movie Schema
 const InventoryModel  = new Schema ({
     title: {
         type: String,
